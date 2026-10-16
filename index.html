@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Titli Silks – Elegance in Every Thread</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swapdisplay=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🦋</span>
+        <div class="logo-text">
+          <span class="logo-main">Titli Silks</span>
+          <span class="logo-sub">Trichy</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#products">Our Products</a>
+        <a href="#about">About Us</a>
+      </nav>
+      <button class="btn-contact-header" id="openContactPopup">Contact Us</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#home" class="mob-link">Home</a>
+      <a href="#products" class="mob-link">Our Products</a>
+      <a href="#about" class="mob-link">About Us</a>
+      <button class="btn-contact-header mob-contact" id="openContactPopupMob">Contact Us</button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="Front.png" alt="Silk Saree" class="hero-img"/>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag" id="heroTag">— Premium Collection 2025 —</p>
+      <h1 class="hero-title" id="heroTitle">Elegance in <em>Every Thread</em></h1>
+      <p class="hero-sub" id="heroSub">Premium Silk Sarees Collection · Handcrafted in India</p>
+      <a href="#products" class="btn-hero" id="heroCta">Explore Collection <i class="fa fa-arrow-right"></i></a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Kanchipuram Silk</span><span class="dot">✦</span>
+      <span>Banarasi Weaves</span><span class="dot">✦</span>
+      <span>Pure Zari</span><span class="dot">✦</span>
+      <span>Handloom Heritage</span><span class="dot">✦</span>
+      <span>Wedding Collections</span><span class="dot">✦</span>
+      <span>Festive Specials</span><span class="dot">✦</span>
+      <span>Kanchipuram Silk</span><span class="dot">✦</span>
+      <span>Banarasi Weaves</span><span class="dot">✦</span>
+      <span>Pure Zari</span><span class="dot">✦</span>
+      <span>Handloom Heritage</span><span class="dot">✦</span>
+      <span>Wedding Collections</span><span class="dot">✦</span>
+      <span>Festive Specials</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products-section" id="products">
+    <div class="section-header reveal">
+      <p class="section-label">Our Curated Selection</p>
+      <h2 class="section-title">Signature Collections</h2>
+      <div class="title-line"></div>
+    </div>
+    <div class="products-grid" id="productsGrid"></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about-section" id="about">
+    <div class="about-inner">
+      <div class="about-img-col reveal">
+        <div class="about-img-frame">
+          <img src="Front.png" alt="Titli Silks Showroom"/>
+          <div class="about-img-badge">Since 2005</div>
+        </div>
+      </div>
+      <div class="about-text-col reveal">
+        <p class="section-label">Our Story</p>
+        <h2 class="section-title">Where Tradition Meets Luxury</h2>
+        <div class="title-line"></div>
+        <p class="about-desc">
+          Nestled in the heart of Trichy, <strong>Titli Silks</strong> is a celebrated destination for connoisseurs of fine silk sarees. For over two decades, we have been curating the most exquisite handloom weaves from across India — bringing the legacy of master weavers to the doorstep of every woman who cherishes elegance.
+        </p>
+        <ul class="about-points">
+          <li><span class="check">✔</span> Premium quality silk sarees, certified authentic</li>
+          <li><span class="check">✔</span> Trusted by thousands of customers in Trichy</li>
+          <li><span class="check">✔</span> Latest trending collections updated every season</li>
+          <li><span class="check">✔</span> Affordable luxury — beauty without compromise</li>
+          <li><span class="check">✔</span> Excellent personalized customer service</li>
+        </ul>
+        <button class="btn-about" id="openContactAbout">Visit Our Store <i class="fa fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🦋</span>
+        <span class="footer-name">Titli Silks</span>
+        <p>Premium Silk Sarees · Trichy</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="footer-contact">
+        <p><i class="fa fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/JzfTt5osLsbMqxJX8" target="_blank" rel="noopener"> D-5, 7th Cross Rd E, Thillai Nagar East,<br>West Tiruchirappalli, Tamil Nadu 620018</a></p>
+        <p><i class="fa fa-phone"></i> <a href="tel:+918608865811">+91 98424 92929</a></p>
+        <p><i class="fab fa-whatsapp"></i><a href="https://wa.me/918608865811" target="_blank" rel="noopener"> WhatsApp us anytime</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Titli Silks. All rights reserved. Crafted with ♥ in Trichy.</p>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOAT ===== -->
+  <a class="whatsapp-float" href="https://wa.me/918608865811?text=Hello%2C%20I%20am%20interested%20in%20your%20silk%20sarees%20at%20Titli%20Silks!" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== SHIPPING POPUP ===== -->
+  <div class="popup-overlay" id="shippingOverlay">
+    <div class="popup-box" id="shippingPopup">
+      <button class="popup-close" id="closeShipping"><i class="fa fa-times"></i></button>
+      <div class="popup-header">
+        <i class="fa fa-truck"></i>
+        <h3>Ship This Saree</h3>
+        <p id="shippingProductName" class="popup-product-label">—</p>
+      </div>
+      <div class="popup-form">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="shipName" placeholder="Enter your full name"/>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="shipPhone" placeholder="+91 XXXXX XXXXX"/>
+        </div>
+        <div class="form-group">
+          <label>Delivery Address</label>
+          <textarea id="shipAddress" rows="3" placeholder="House No., Street, City, Pincode"></textarea>
+        </div>
+        <button class="btn-location" id="shareLocation">
+          <i class="fa fa-location-arrow"></i> Share Live Location
+        </button>
+        <p class="location-status" id="locationStatus"></p>
+        <button class="btn-submit" id="submitShipping">
+          <i class="fab fa-whatsapp"></i> Send Order via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== VIEW MODAL ===== -->
+  <div class="popup-overlay" id="viewOverlay">
+    <div class="popup-box view-box" id="viewPopup">
+      <button class="popup-close" id="closeView"><i class="fa fa-times"></i></button>
+      <div class="view-inner">
+        <div class="view-img-col">
+          <img src="" alt="Saree" id="viewImg"/>
+        </div>
+        <div class="view-info-col">
+          <p class="section-label">Product Details</p>
+          <h3 id="viewName">—</h3>
+          <div class="view-details">
+            <div class="view-detail"><span>Fabric</span><strong id="viewFabric">—</strong></div>
+            <div class="view-detail"><span>Color</span><strong id="viewColor">—</strong></div>
+            <div class="view-detail"><span>Design</span><strong id="viewDesign">—</strong></div>
+            <div class="view-detail"><span>Price</span><strong id="viewPrice">—</strong></div>
+          </div>
+          <p class="view-note">Each saree is handpicked and verified for authenticity. Free delivery available across Tamil Nadu.</p>
+          <button class="btn-submit view-order-btn" id="viewOrderBtn">
+            <i class="fa fa-truck"></i> Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT POPUP ===== -->
+  <div class="popup-overlay" id="contactOverlay">
+    <div class="popup-box" id="contactPopup">
+      <button class="popup-close" id="closeContact"><i class="fa fa-times"></i></button>
+      <div class="popup-header">
+        <i class="fa fa-envelope"></i>
+        <h3>Get in Touch</h3>
+        <p>We'd love to hear from you!</p>
+      </div>
+      <div class="popup-form">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="contactName" placeholder="Enter your full name"/>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="contactPhone" placeholder="+91 XXXXX XXXXX"/>
+        </div>
+        <div class="form-group">
+          <label>Address</label>
+          <textarea id="contactAddress" rows="3" placeholder="Your address"></textarea>
+        </div>
+        <button class="btn-submit" id="submitContact">
+          <i class="fab fa-whatsapp"></i> Send via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
